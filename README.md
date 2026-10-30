@@ -35,9 +35,11 @@ python3 -m http.server 4173
 - `index.html`：页面结构和看板内容
 - `styles.css`：响应式样式
 - `app.js`：切换交互、图表和数据
-- `content-data.js`：41 篇笔记的正文与互动字段
-- `assets/images/`：100 张笔记原图，随网页一同部署
+- `content-data.js`：37 篇笔记的正文与互动字段
+- `assets/images/`：72 张笔记原图，随网页一同部署
 
-首页“全部笔记内容”展示全部 41 篇，每页 10 篇；点击列表行可查看正文原文、全部配图，以及全部评论（含楼中楼回复）。
+首页“全部笔记内容”展示全部 37 篇，每页 10 篇；点击列表行可查看正文原文、全部配图，以及全部评论（含楼中楼回复）。
 
-数据来源：`/Users/Zhuanz/Downloads/xiaohongshu-脆奶酪/`
+数据来源：`/Users/liuyi/Downloads/xiaohongshu-脆奶酪/`
+
+更新日期：2026-10-30

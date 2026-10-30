@@ -1,6 +1,6 @@
 const monthly = {
-  labels: ["25-11", "25-12", "26-01", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10"],
-  values: [122, 63, 68, 289, 42, 396, 143, 164, 902, 3984, 666],
+  labels: ["25-12", "26-01", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10"],
+  values: [63, 68, 5, 42, 396, 143, 164, 55, 3984, 62],
 };
 
 const flavors = [
@@ -80,7 +80,7 @@ function drawTrendChart() {
       <polygon class="trend-area" points="${area}"></polygon>
       <polyline class="trend-line" points="${points}"></polyline>
       ${monthly.values.map((value, index) => `
-        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 9 ? 5 : 3.5}">
+        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 8 ? 5 : 3.5}">
           <title>${monthly.labels[index]}：${value.toLocaleString()} 次互动</title>
         </circle>
         <text class="chart-label" x="${x(index)}" y="${height - 10}" text-anchor="middle">${monthly.labels[index]}</text>
@@ -91,10 +91,10 @@ function drawTrendChart() {
 
 function drawSentiment() {
   const data = [
-    { label: "正负都有", value: 15, color: "#e5b83a" },
+    { label: "正负都有", value: 14, color: "#e5b83a" },
     { label: "扩抓", value: 12, color: "#345d78" },
     { label: "偏正面", value: 10, color: "#315d4b" },
-    { label: "中性/其他", value: 4, color: "#a9aaa4" },
+    { label: "中性/其他", value: 1, color: "#a9aaa4" },
   ];
   const total = data.reduce((sum, item) => sum + item.value, 0);
   let cursor = 0;
