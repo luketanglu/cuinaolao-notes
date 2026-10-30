@@ -1,0 +1,272 @@
+/* 脆奶酪小红书评价整理 */
+:root {
+  --bg: #f7f5f2;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #ff2442;
+  --accent-soft: #ffe8eb;
+  --border: #ebe7e2;
+  --shadow: 0 2px 12px rgba(0,0,0,.06);
+  --radius: 14px;
+  --max: 860px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 20px 16px 48px;
+}
+header.site {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+}
+header.site .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.logo:hover { text-decoration: none; color: var(--accent); }
+.logo span { color: var(--accent); }
+.tagline {
+  color: var(--muted);
+  font-size: .85rem;
+}
+.disclaimer {
+  background: #fff8e6;
+  border: 1px solid #f0e0b2;
+  color: #6a5a2a;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: .82rem;
+  margin-bottom: 20px;
+}
+.stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.stats strong { color: var(--text); }
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.note-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 14px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.note-card:hover {
+  border-color: #f5c2c9;
+  box-shadow: 0 4px 18px rgba(255,36,66,.08);
+}
+.thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  align-content: start;
+}
+.thumbs a {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee;
+}
+.thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.thumbs.single { grid-template-columns: 1fr; }
+.thumbs.single a { aspect-ratio: 1; }
+.note-main { min-width: 0; }
+.note-title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.note-title a { color: var(--text); text-decoration: none; }
+.note-title a:hover { color: var(--accent); }
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-size: .82rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.meta .author { color: var(--text); font-weight: 500; }
+.preview {
+  font-size: .92rem;
+  color: #333;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+.back {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: .9rem;
+}
+.detail {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 18px;
+}
+.detail h1 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+.detail .body {
+  margin: 16px 0;
+  font-size: 1rem;
+  white-space: normal;
+  word-break: break-word;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 16px 0 8px;
+}
+.gallery a {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eee;
+  aspect-ratio: 1;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.section-title {
+  margin: 28px 0 12px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comments { display: flex; flex-direction: column; gap: 12px; }
+.comment {
+  background: #faf9f7;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.comment.reply {
+  background: #fff;
+  margin-top: 8px;
+}
+.replies {
+  margin-top: 10px;
+  margin-left: 14px;
+  padding-left: 12px;
+  border-left: 3px solid #f0d0d5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  font-size: .8rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+  align-items: center;
+}
+.comment-author { color: var(--text); font-weight: 600; }
+.badge-author {
+  background: var(--accent);
+  color: #fff;
+  font-size: .68rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.comment-body {
+  font-size: .92rem;
+  word-break: break-word;
+}
+.empty {
+  color: var(--muted);
+  font-size: .9rem;
+  padding: 12px 0;
+}
+footer.site {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 8px 16px 40px;
+  color: var(--muted);
+  font-size: .78rem;
+  text-align: center;
+}
+@media (max-width: 560px) {
+  .note-card {
+    grid-template-columns: 72px 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .replies { margin-left: 6px; padding-left: 8px; }
+  .detail { padding: 16px 14px; }
+  .detail h1 { font-size: 1.2rem; }
+}
