@@ -1,6 +1,6 @@
 const monthly = {
-  labels: ["25-12", "26-01", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10"],
-  values: [63, 68, 5, 42, 396, 143, 164, 55, 3984, 62],
+  labels: ["25-04", "25-05", "25-06", "25-10", "25-11", "25-12", "26-01", "26-02", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10"],
+  values: [57, 124, 255, 940, 22, 63, 74, 2, 5, 42, 396, 5074, 485, 193, 3984, 410],
 };
 
 const flavors = [
@@ -64,12 +64,12 @@ function drawTrendChart() {
   const padding = { top: 18, right: 16, bottom: 32, left: 42 };
   const innerWidth = width - padding.left - padding.right;
   const innerHeight = height - padding.top - padding.bottom;
-  const max = 4000;
+  const max = 6000;
   const x = (index) => padding.left + (index / (monthly.values.length - 1)) * innerWidth;
   const y = (value) => padding.top + innerHeight - (value / max) * innerHeight;
   const points = monthly.values.map((value, index) => `${x(index)},${y(value)}`).join(" ");
   const area = `${padding.left},${padding.top + innerHeight} ${points} ${x(monthly.values.length - 1)},${padding.top + innerHeight}`;
-  const gridValues = [0, 1000, 2000, 3000, 4000];
+  const gridValues = [0, 1500, 3000, 4500, 6000];
 
   host.innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="2025年11月至2026年10月月度互动趋势">
@@ -80,7 +80,7 @@ function drawTrendChart() {
       <polygon class="trend-area" points="${area}"></polygon>
       <polyline class="trend-line" points="${points}"></polyline>
       ${monthly.values.map((value, index) => `
-        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 8 ? 5 : 3.5}">
+        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 11 ? 5 : 3.5}">
           <title>${monthly.labels[index]}：${value.toLocaleString()} 次互动</title>
         </circle>
         <text class="chart-label" x="${x(index)}" y="${height - 10}" text-anchor="middle">${monthly.labels[index]}</text>
@@ -92,7 +92,7 @@ function drawTrendChart() {
 function drawSentiment() {
   const data = [
     { label: "正负都有", value: 14, color: "#e5b83a" },
-    { label: "扩抓", value: 12, color: "#345d78" },
+    { label: "扩抓", value: 46, color: "#345d78" },
     { label: "偏正面", value: 10, color: "#315d4b" },
     { label: "中性/其他", value: 1, color: "#a9aaa4" },
   ];
