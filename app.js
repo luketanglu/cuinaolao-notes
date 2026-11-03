@@ -91,10 +91,9 @@ function drawTrendChart() {
 
 function drawSentiment() {
   const data = [
-    { label: "正负都有", value: 14, color: "#e5b83a" },
-    { label: "扩抓", value: 60, color: "#345d78" },
-    { label: "偏正面", value: 10, color: "#315d4b" },
-    { label: "中性/其他", value: 1, color: "#a9aaa4" },
+    { label: "负面", value: 10, color: "#b42318" },
+    { label: "正面", value: 46, color: "#315d4b" },
+    { label: "中性/其他", value: 29, color: "#a9aaa4" },
   ];
   const total = data.reduce((sum, item) => sum + item.value, 0);
   let cursor = 0;
@@ -139,9 +138,9 @@ function renderAllNotes() {
   const body = document.getElementById("all-notes-body");
 
   body.innerHTML = pageItems.map((note) => {
-    const tone = note.sentiment_guess === "偏正面"
+    const tone = note.sentiment_guess === "正面"
       ? "tag-product"
-      : note.sentiment_guess === "正负都有"
+      : note.sentiment_guess === "负面"
         ? "tag-risk"
         : "";
     return `
