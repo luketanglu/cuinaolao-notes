@@ -6971,5 +6971,20 @@ window.NOTE_CONTENTS = [
         "replies": []
       }
     ]
+  },
+  {
+    "note_id": "6ae8a6510000000034030d84",
+    "title": "咸咸的脆奶酪",
+    "author": "亨里克",
+    "publish_time": "2026-11-02",
+    "body": "咸咸的脆奶酪\n哇这个脆奶酪真的绝了，非常上头。第一次吃不怎么样，但越吃越上瘾，咸甜咸甜的",
+    "likes": "0",
+    "collects": "0",
+    "comments_count": "0",
+    "sentiment_guess": "扩抓",
+    "images": [
+      "./assets/images/6ae8a6510000000034030d84/01_1040g2sg3272samk4n8h05nnhq2a0857jn528e50.webp"
+    ],
+    "comments": []
   }
 ];
