@@ -1,6 +1,6 @@
 const monthly = {
   labels: ["25-04", "25-05", "25-06", "25-10", "25-11", "25-12", "26-01", "26-02", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10", "26-11"],
-  values: [57, 2942, 255, 940, 22, 63, 74, 683, 5, 42, 396, 5168, 545, 4479, 4019, 432, 40],
+  values: [57, 2942, 255, 940, 22, 63, 74, 683, 5, 42, 396, 5168, 545, 4479, 4019, 432, 45],
 };
 
 const flavors = [
@@ -92,7 +92,7 @@ function drawTrendChart() {
 function drawSentiment() {
   const data = [
     { label: "负面", value: 11, color: "#b42318" },
-    { label: "正面", value: 54, color: "#315d4b" },
+    { label: "正面", value: 55, color: "#315d4b" },
     { label: "中性/其他", value: 35, color: "#a9aaa4" },
   ];
   const total = data.reduce((sum, item) => sum + item.value, 0);

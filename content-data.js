@@ -12506,5 +12506,39 @@ window.NOTE_CONTENTS = [
         "replies": []
       }
     ]
+  },
+  {
+    "note_id": "6af68772000000002a00ce5e",
+    "title": "☕️美式新搭子｜脆奶酪，一口平衡苦与香",
+    "author": "妙芝Miao Cheese",
+    "publish_time": "1794541426000",
+    "body": "一杯热美式，配妙芝脆奶酪\n清苦撞进绵密奶香，酥脆刚好中和苦涩\n简单自在，是属于午后的松弛时刻\n#妙芝脆奶酪[话题]# #美式[话题]# #美式搭子[话题]# #休息[话题]# #脆奶酪搭子[话题]#",
+    "likes": "2",
+    "collects": "1",
+    "comments_count": "2",
+    "sentiment_guess": "正面",
+    "images": [
+      "./assets/images/6af68772000000002a00ce5e/01_1040g34o327gcc97c6a3g5q3cn19i7elhrsi86o0.webp",
+      "./assets/images/6af68772000000002a00ce5e/02_1040g34o327gcc97c6a405q3cn19i7elhm5v2jbg.webp",
+      "./assets/images/6af68772000000002a00ce5e/03_1040g34o327gcc97c6a305q3cn19i7elhp1723io.webp"
+    ],
+    "comments": [
+      {
+        "author": "无敌幸运儿",
+        "content": "流口水[[b7c0498189d449e8f22946be494d6bad48eda5ab.png]]",
+        "time": "1天前浙江",
+        "likes": "0",
+        "is_author": false,
+        "replies": []
+      },
+      {
+        "author": "艳哥120斤",
+        "content": "dd盒做[[7a6287c7f65fabdc15fa8f06b2696cccc21e86f2.png]]",
+        "time": "2天前辽宁",
+        "likes": "0",
+        "is_author": false,
+        "replies": []
+      }
+    ]
   }
 ];
