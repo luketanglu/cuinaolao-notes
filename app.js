@@ -1,6 +1,6 @@
 const monthly = {
   labels: ["25-04", "25-05", "25-06", "25-10", "25-11", "25-12", "26-01", "26-02", "26-03", "26-04", "26-05", "26-06", "26-07", "26-08", "26-09", "26-10", "26-11"],
-  values: [57, 2942, 255, 940, 22, 63, 74, 683, 5, 42, 396, 5168, 545, 4479, 4019, 432, 45],
+  values: [57, 2942, 255, 940, 22, 20003, 74, 683, 27, 42, 396, 5168, 545, 4479, 4019, 432, 293],
 };
 
 const flavors = [
@@ -64,12 +64,12 @@ function drawTrendChart() {
   const padding = { top: 18, right: 16, bottom: 32, left: 42 };
   const innerWidth = width - padding.left - padding.right;
   const innerHeight = height - padding.top - padding.bottom;
-  const max = 6000;
+  const max = 21000;
   const x = (index) => padding.left + (index / (monthly.values.length - 1)) * innerWidth;
   const y = (value) => padding.top + innerHeight - (value / max) * innerHeight;
   const points = monthly.values.map((value, index) => `${x(index)},${y(value)}`).join(" ");
   const area = `${padding.left},${padding.top + innerHeight} ${points} ${x(monthly.values.length - 1)},${padding.top + innerHeight}`;
-  const gridValues = [0, 1500, 3000, 4500, 6000];
+  const gridValues = [0, 5250, 10500, 15750, 21000];
 
   host.innerHTML = `
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="2025年11月至2026年10月月度互动趋势">
@@ -80,7 +80,7 @@ function drawTrendChart() {
       <polygon class="trend-area" points="${area}"></polygon>
       <polyline class="trend-line" points="${points}"></polyline>
       ${monthly.values.map((value, index) => `
-        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 11 ? 5 : 3.5}">
+        <circle class="trend-point" cx="${x(index)}" cy="${y(value)}" r="${index === 5 ? 5 : 3.5}">
           <title>${monthly.labels[index]}：${value.toLocaleString()} 次互动</title>
         </circle>
         <text class="chart-label" x="${x(index)}" y="${height - 10}" text-anchor="middle">${monthly.labels[index]}</text>
@@ -92,8 +92,8 @@ function drawTrendChart() {
 function drawSentiment() {
   const data = [
     { label: "负面", value: 11, color: "#b42318" },
-    { label: "正面", value: 55, color: "#315d4b" },
-    { label: "中性/其他", value: 35, color: "#a9aaa4" },
+    { label: "正面", value: 58, color: "#315d4b" },
+    { label: "中性/其他", value: 36, color: "#a9aaa4" },
   ];
   const total = data.reduce((sum, item) => sum + item.value, 0);
   let cursor = 0;
