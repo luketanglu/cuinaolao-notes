@@ -13312,6 +13312,46 @@ window.NOTE_CONTENTS = [
     ]
   },
   {
+    "note_id": "6af40118000000002b01064c",
+    "title": "胖东来上新榴莲味脆奶酪测评！",
+    "author": "豆皮话梅糖",
+    "publish_time": "1794390449000",
+    "body": "最近逛胖东来看到好多人都拿了这个妙芝脆奶酪猫山王榴莲味\n顺手也拿了两袋\n价格39.9，一大包里面6袋\n价格小贵，但是总体吃下来还是很值很好吃的\n\t\n开袋榴莲香混着奶酪香，口感是酥脆的那种，越嚼越香\n看了下配料表，添加了≥63%的新西兰进口干酪，用料很实在\n而且是非油炸的，还是比较健康的\n\t\n带到办公室给同事们也尝了尝，现在同事都追着我要链接🔗\n榴莲奶酪爱好者去胖东来时可以闭眼冲✅\n\t\n#胖东来零食[话题]# #胖东来必买[话题]# #胖东来推荐[话题]# #妙芝脆奶酪[话题]# #伊利奶酪[话题]# #胖东来本月黑马[话题]# #胖东来[话题]# #打工人日常[话题]# #胖东来零食分享[话题]# #健康零食[话题]#",
+    "likes": "105",
+    "collects": "26",
+    "comments_count": "2",
+    "sentiment_guess": "正面",
+    "images": [
+      "./assets/images/6af40118000000002b01064c/01_1040g3k0327dvbfgung005pcoupro3hir1vjcqf8.webp",
+      "./assets/images/6af40118000000002b01064c/02_1040g3k0327dvbipcmq005pcoupro3hiruvh2jg0.webp",
+      "./assets/images/6af40118000000002b01064c/03_1040g3k0327dvbi8qmq005pcoupro3hire9sgsvo.webp",
+      "./assets/images/6af40118000000002b01064c/04_1040g3k0327dvbhu2mq705pcoupro3hirdnn5tt0.webp",
+      "./assets/images/6af40118000000002b01064c/05_1040g3k0327dvbhjfmq005pcoupro3hirosehfu8.webp",
+      "./assets/images/6af40118000000002b01064c/06_1040g3k0327dvbh4cn0005pcoupro3hirorkvmmg.webp",
+      "./assets/images/6af40118000000002b01064c/07_1040g3k0327dvbfpk76005pcoupro3hirkm0fqj8.webp",
+      "./assets/images/6af40118000000002b01064c/08_1040g3k0327dvbgj770005pcoupro3hir7g2ll30.webp",
+      "./assets/images/6af40118000000002b01064c/09_1040g3k0327dvbg9in0005pcoupro3hir0vd0bt0.webp"
+    ],
+    "comments": [
+      {
+        "author": "茹 昨",
+        "content": "难吃",
+        "time": "2天前河南",
+        "likes": "0",
+        "is_author": false,
+        "replies": []
+      },
+      {
+        "author": "子衿轻轻",
+        "content": "这个看着就知道芝士含量很高了",
+        "time": "7天前山西",
+        "likes": "0",
+        "is_author": false,
+        "replies": []
+      }
+    ]
+  },
+  {
     "note_id": "6af5a192000000002c00e751",
     "title": "谁能给我去胖东来带几包",
     "author": "小武总划水",
