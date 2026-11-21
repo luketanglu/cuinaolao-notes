@@ -1497,6 +1497,22 @@ window.NOTE_CONTENTS = [
     ]
   },
   {
+    "note_id": "69bbed410000000023016021",
+    "title": "【疯狂动物城联名礼盒】伊利妙芝脆奶酪，高干酪酥脆，非油炸零食。奶酪20gx8袋，口味有生奶酪原味、鲜香蟹黄、香煎培根，搭配两款迪士尼叠叠杯（图案随机）。",
+    "author": "疯狂动物城",
+    "publish_time": "1773923649000",
+    "body": "【疯狂动物城联名礼盒】伊利妙芝脆奶酪，高干酪酥脆，非油炸零食。奶酪20gx8袋，口味有生奶酪原味、鲜香蟹黄、香煎培根，搭配两款迪士尼叠叠杯（图案随机）。\n\t\n公司清仓库存，原价89.9，现价59.9包邮，全新未拆，正品礼盒装，送人自留都合适。包邮，喜欢直接拍，细节私聊～日期2026年1月3日",
+    "likes": "0",
+    "collects": "0",
+    "comments_count": "0",
+    "sentiment_guess": "中性/其他",
+    "images": [
+      "./assets/images/69bbed410000000023016021/01_1040g00831tt6ujgpn8005ooulp28vdn8tl4or50.webp",
+      "./assets/images/69bbed410000000023016021/02_1040g00831tt6ujgpn80g5ooulp28vdn8mr7f84g.webp"
+    ],
+    "comments": []
+  },
+  {
     "note_id": "69bd0efa000000001a0287b3",
     "title": "唯一指定奶酪！伊利奶酪首登博鳌亚洲论坛！",
     "author": "伊利奶酪",
@@ -12531,6 +12547,54 @@ window.NOTE_CONTENTS = [
         "content": "我看一次这个品骂一次！难吃得要死！！",
         "time": "10-14 重庆",
         "likes": "1",
+        "is_author": false,
+        "replies": []
+      }
+    ]
+  },
+  {
+    "note_id": "6ac877c5000000001303f255",
+    "title": "规矩不能坏！",
+    "author": "妙芝Miao Cheese",
+    "publish_time": "1791522757000",
+    "body": "怕赔钱吗？\n怕，但更怕顾客吃了烧心！\n\t\n#不烧心[话题]# #妙芝脆奶酪[话题]# #规矩就是规矩[话题]# #howto玩坏AI[话题]#",
+    "likes": "7",
+    "collects": "1",
+    "comments_count": "4",
+    "sentiment_guess": "中性/其他",
+    "images": [
+      "./assets/images/6ac877c5000000001303f255/01_1040g0083263em9e75g0g5q3cn19i7elhdsfa7lg.webp"
+    ],
+    "comments": [
+      {
+        "author": "无敌幸运儿",
+        "content": "哈哈哈哈哈",
+        "time": "10-09浙江",
+        "likes": "0",
+        "is_author": false,
+        "replies": []
+      },
+      {
+        "author": "Cloudy~",
+        "content": "666",
+        "time": "10-09江苏",
+        "likes": "1",
+        "is_author": false,
+        "replies": []
+      },
+      {
+        "author": "幻含.",
+        "content": "前[[e0771182c12362d41f70356f714d84dccc4d07bc.png]]",
+        "time": "10-09河北",
+        "likes": "1",
+        "is_author": false,
+        "replies": []
+      },
+      {
+        "author": "溜达",
+        "content": "1",
+        "time": "10-09四川",
+        "likes": "0",
         "is_author": false,
         "replies": []
       }
